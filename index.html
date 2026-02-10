@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#research">Research</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>AQUA's Portfolio</h1>
+            <p>「共通の話題」を生み出す、手触りの良いゲーム体験を実装する</p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                大学院1年生。幼少期、内向的だった私が『ポケットモンスター』を通じて多くの友人と繋がれた経験から、「誰かの共通言語となる製品を生み出したい」という強い想いを抱き、ゲーム業界を志しました 。
+            </p>
+            <p>
+                「ゲームがどう動いているのか」という裏側への強い探求心を原動力に、現在はUnityやC++を用いた開発に注力しています 。単に機能を実装するだけでなく、チーム開発における保守性の高い設計や、ユーザーに心地よい手触りを与えるインゲームの実装、さらに開発効率を高めるための自動化手法など、「技術で面白さを支える」ことに喜びを感じています 。
+            </p>
+            <p>
+                将来は、多くのファンを持つ作品の開発に携わり、ゆくゆくは新規開発のコアメンバーとして、私自身がそうであったように「誰かの人生を変えるきっかけ」となるゲームを創り上げることが目標です 。
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+
+            <div class="skills-definition">
+                <p>※スキルの習熟度を以下の基準で定義しています。</p>
+                <ul>
+                    <li><strong>★★★</strong>：独力での設計・実装・デバッグが可能</li>
+                    <li><strong>★★☆</strong>：基礎を理解し、公式ドキュメント等を参照しながら実装可能</li>
+                    <li><strong>★☆☆</strong>：チュートリアル完了、またはプロジェクトでの一部使用経験</li>
+                </ul>
+            </div>
+
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>C# <span class="stars">★★★</span></li>
+                        <li>Python <span class="stars">★★★</span></li>
+                        <li>C++ <span class="stars">★★★</span></li>
+                        <li>Java <span class="stars">★★☆</span></li>
+                        <li>PHP <span class="stars">★★☆</span></li>
+                        <li>JavaScript <span class="stars">★★☆</span></li>
+                        <li>Go <span class="stars">★☆☆</span></li>
+                        <li>Kotlin <span class="stars">★☆☆</span></li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <ul>
+                        <li>Unity <span class="stars">★★★</span></li>
+                        <li>DxLib <span class="stars">★★★</span></li>
+                        <li>Android Studio <span class="stars">★★☆</span></li>
+                        <li>Firebase <span class="stars">★★☆</span></li>
+                        <li>Django <span class="stars">★★☆</span></li>
+                        <li>Vue.js <span class="stars">★☆☆</span></li>
+                        <li>React <span class="stars">★☆☆</span></li>
+                        <li>.NET (UniTask, R3, DoTween) <span class="stars">★★☆</span></li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Others</h3>
+                    <ul>
+                        <li>Git & GitHub <span class="stars">★★★</span></li>
+                        <li>MySQL <span class="stars">★★☆</span></li>
+                        <li>PostgreSQL <span class="stars">★★☆</span></li>
+                        <li>Vagrant <span class="stars">★☆☆</span></li>
+                        <li>Ansible <span class="stars">★☆☆</span></li>
+                        <li>Nginx <span class="stars">★☆☆</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card-trigger card"
+                    data-title="3Dシューティングゲーム"
+                    data-date="2023/08/10 - 2023/09/26(約2ヶ月)"
+                    data-notion="https://www.notion.so/3D-303de112368880faae4cd288b81ae751?source=copy_link"
+                    data-description="ゲーム制作サークル内イベント「夏チーム」にて制作した、戦闘機のカスタマイズが可能な3Dシューティングゲームです。プログラムリーダーとして、11名（PG5、3D2、SE4）の多職種チームを牽引し、ゲームクリエイター甲子園2023への出展まで完遂しました。"
+                    data-role="プログラムリーダー / メインプログラマー"
+                    data-detail="11名の多職種チームで、シーン単位の担当分離によるマージミス防止と、進捗管理を主導し完遂。
+敵の出現や障害物のランダム生成ロジックを自作し、開発工数の削減とリプレイ性の向上を両立。
+メンバー離脱の際も、リスクを見越したタスク設計と個別のメンタルケアにより、納期通りのリリースを実現。"
+                    data-tech="Unity, C#">
+                    <div class="card-header">
+                        <h3>3Dシューティングゲーム</h3>
+                        <span class="project-date">2023/08/10 - 2023/09/26(約2ヶ月)</span>
+                    </div>
+                    <p><strong>役割:</strong> プログラムリーダー</p>
+                    <p>11名規模のチームで戦闘機をカスタマイズできる3Dシューティングゲームを開発しました。</p>
+                    <p><strong>使用技術:</strong> Unity, C#</p>
+                </div>
+                <div class="project-card-trigger card"
+                    data-title="3D脱出ゲーム"
+                    data-date="2024/03/10 - 2024/3/17(1週間)"
+                    data-notion="https://www.notion.so/3D-303de1123688806f81a1c645e6e5fc14?source=copy_link"
+                    data-description="KC3HACK（ハッカソン）で未完成となってしまった作品の個人的な再挑戦です。
+当時の課題として、現実の地下通路を忠実にモデリングしすぎた結果、階段や曲がり角が動的生成の障害となり、1週間での実装が不可能になってしまったと分析しました。
+そこで、目標を「8番出口」のコア体験を維持しつつ、確実に完遂できる設計へ再構築する、としてKC3HACKと同様の期間に制限し開発に取り組みました。"
+                    data-role="個人開発（企画・実装・リリース）"
+                    data-detail="ハッカソンでの「ステージ動的生成」の失敗を分析し、1週間で企画からリリースまでを完遂したリベンジプロジェクト。
+物理的な「再現」から、ゲーム性の「抽象化」へと設計思想を転換。左右の分かれ道を利用し、ステージ生成をZ軸の調整のみに集約するアルゴリズムを考案。
+複雑なステージ構造を簡略化したことで、実装難易度を大幅に下げ、個人開発における完遂能力と課題解決のプロセスを確立。"
+                    data-tech="Unity, C#">
+                    <div class="card-header">
+                        <h3>3D脱出ゲーム</h3>
+                        <span class="project-date">2024/03/10 - 2024/03/17(1週間)</span>
+                    </div>
+                    <p>ハッカソンでの失敗をバネに、1週間で企画からリリースまで行った個人開発です。</p>
+                    <p><strong>使用技術:</strong> Unity, C#</p>
+                </div>
+                <div class="project-card-trigger card"
+                    data-title="育成シミュレーションゲーム"
+                    data-date="2024/03/18 - 2024/03/29(11日間)"
+                    data-notion="https://www.notion.so/2D-303de1123688803cbb91d86c033d6c7f?source=copy_link"
+                    data-description="Unity1weekで「かわる」をテーマに開発。MVPモデルの設計やデータのカプセル化を実践しました。"
+                    data-role="個人開発（企画・設計・実装・リリース）"
+                    data-detail="Unity1week（テーマ「かわる」）にて、ゲーム開発を題材とした育成シミュレーションを11日間で完遂。
+MVPモデルを採用し、データのカプセル化や単一責任の原則（ロジックの分離）を意識した設計を個人開発で実践。
+多重ネストによるバグ等のトラブルを自力で解消し、機能の優先順位付け（コア機能の選定）による完遂能力を習得。"
+                    data-tech="Unity, C#">
+                    <div class="card-header">
+                        <h3>育成シミュレーションゲーム</h3>
+                        <span class="project-date">2024/03/18 - 2024/03/29(11日間)</span>
+                    </div>
+                    <p>Unity1weekで「かわる」をテーマに開発。MVPモデルの設計やデータのカプセル化を実践しました。</p>
+                    <p><strong>使用技術:</strong> Unity, C#</p>
+                </div>
+                <div class="project-card-trigger card"
+                    data-title="パフォーマンス調査"
+                    data-date="2026/01/14 - 2026/01/24"
+                    data-notion="https://zenn.dev/aqua5432/articles/b4addb51f80508"
+                    data-description="Unity製ゲームのボトルネックを特定し、描画パイプラインの最適化やメモリ管理の改善を行いました。"
+                    data-role="技術調査・検証（Unity / C# / C++）"
+                    data-detail="「C#の実行速度」の正体を、GC Alloc（メモリ確保量）の観点からプロファイラーを用いて数値ベースで検証。
+自身の過去作のボトルネック調査に加え、構造体（struct）やオブジェクトプールを用いた最適化手法をコードレベルで実証。
+Unity（安全性・開発効率）とC++（制御性・性能）の設計思想の違いを比較分析し、プラットフォームに合わせた選定基準を言語化。"
+                    data-tech="Unity, Profiler">
+                    <div class="card-header">
+                        <h3>パフォーマンス調査</h3>
+                        <span class="project-date">2026/01/14 - 2026/01/24</span>
+                    </div>
+                    <p>Unity製ゲームのボトルネックを特定し、描画パイプラインの最適化やメモリ管理の改善を行いました。</p>
+                    <p><strong>使用技術:</strong> Unity, Profiler</p>
+                </div>
+                <div class="project-card-trigger card"
+                    data-title="C++リファクタリング"
+                    data-date="2026/01/22 - 2026/01/27"
+                    data-notion="https://zenn.dev/aqua5432/articles/bba1d29daf2c72"
+                    data-description="既存のC++製ゲームエンジンを解析し、よりモダンな設計へのリファクタリングを行いました。"
+                    data-role="個人開発（C++ / DxLibを用いたリファクタリング）"
+                    data-detail="「動くが壊れやすいコード」の打破を目的に、1,000行規模の「神クラス」を責務ごとに分離し、保守性の高いアーキテクチャへ再構築。
+ワールド座標・画面座標の明確な分離や、Renderer/Physics/InputSystemの独立により、ロジックと描画の密結合を解消。
+C++特有のヘッダ依存関係を整理し、グローバル変数を排除した「所有関係による管理」を導入。設計の歪みがバグを生むという本質を実証。"
+                    data-tech="C++, Design Patterns">
+                    <div class="card-header">
+                        <h3>C++リファクタリング</h3>
+                        <span class="project-date">2026/01/22 - 2026/01/27</span>
+                    </div>
+                    <p>既存のC++製ゲームエンジンを解析し、よりモダンな設計へのリファクタリングを行いました。</p>
+                    <p><strong>使用技術:</strong> C++, Design Patterns</p>
+                </div>
+                <div class="project-card-trigger card"
+                    data-title="ゲームの数学・物理実装"
+                    data-date="2026/02"
+                    data-description="ゲーム開発に必要な数学（ベクトル、行列）と物理（衝突判定、摩擦）の基礎をC++で実装しました。"
+                    data-role=""
+                    data-detail=""
+                    data-tech="C++, DxLib">
+                    <div class="card-header">
+                        <h3>ゲームの数学・物理実装</h3>
+                        <span class="project-date">2026/02</span>
+                    </div>
+                    <p>ゲーム開発に必要な数学（ベクトル、行列）と物理（衝突判定、摩擦）の基礎をC++で実装しました。</p>
+                    <p><strong>使用技術:</strong> C++, DxLib</p>
+                </div>
+                <div class="project-card-trigger card"
+                    data-title="ゲーム開発インターン"
+                    data-date="2024/08 - 2024/09"
+                    data-description="ゲーム開発企業でのインターンシップにて、既存タイトルの運用改善タスクに従事しました。"
+                    data-role=""
+                    data-detail=""
+                    data-tech="C#, Unity">
+                    <div class="card-header">
+                        <h3>ゲーム開発インターン</h3>
+                        <span class="project-date">2024/08 - 2024/09</span>
+                    </div>
+                    <p>ゲーム開発企業でのインターンシップにて、既存タイトルの運用改善タスクに従事しました。</p>
+                    <p><strong>使用技術:</strong> C#, Unity</p>
+                </div>
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>大学ハッカソン</h3>
+                            <span class="project-date">2023/08</span>
+                        </div>
+                        <p>「未来の学習」をテーマにしたハッカソンで、ARを用いた英単語学習アプリを開発しました。</p>
+                        <p><strong>使用技術:</strong> Unity, AR Foundation</p>
+                    </div>
+                </a>
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>お手伝い依頼アプリ</h3>
+                            <span class="project-date">2022/11</span>
+                        </div>
+                        <p>和歌山県の課題解決をテーマにしたプログラミングコンテストでアプリを開発しました。</p>
+                        <p><strong>使用技術:</strong> Java, Firebase</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        
+        <section id="research">
+            <h2>Graduate Research</h2>
+            <h3>言語生成AIによるディベート学習支援システムの構築と検証</h3>
+            <p>
+                ディベート学習に必要な対戦相手とジャッジをLLMエージェントで代替し、一人でも実践的な学習を可能にするシステムを構築。Python, Django, JavaScript, PostgreSQLなど未経験の技術を学びながら、1からシステムを設計・実装しました。実験計画や論文執筆も並行して進め、卒業研究発表会では<strong>スライド発表部門で最優秀賞</strong>を受賞しました。
+            </p>
+            <p><strong>使用技術:</strong> Python, Django, JavaScript, PostgreSQL, HTML, CSS</p>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <h2>Contact</h2>
+        <div class="social-links">
+            <a href="https://github.com/aqua5432" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://zenn.dev/aqua5432" target="_blank"><i class="fa-solid fa-file-lines"></i> Zenn</a>
+        </div>
+    </footer>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modal-project-title"></h3>
+            <p id="modal-project-date"></p>
+            <div class="modal-body">
+                <h4>概要</h4>
+                <p id="modal-project-description"></p>
+
+                <h4>担当・役割</h4>
+                <p id="modal-project-role"></p>
+
+                <h4>技術的なこだわり・課題解決</h4>
+                <div id="modal-project-detail"></div>
+
+                <h4>使用技術</h4>
+                <p id="modal-project-tech"></p>
+            </div>
+            <div class="modal-footer">
+                <a id="modal-notion-link" href="#" target="_blank" class="notion-button">
+                    <span>Notionで開発の裏側を詳しく見る</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

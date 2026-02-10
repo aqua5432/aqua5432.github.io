@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --bg-color: #f4f4f9;
+    --primary-color: #ffffff;
+    --secondary-color: #e0e0e0;
+    --accent-color: #007bff;
+    --text-color: #333333;
+    --header-height: 60px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+main {
+    padding-top: var(--header-height);
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+#hero {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('https://source.unsplash.com/random/1600x900/?technology,game') no-repeat center center/cover;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+#skills .skill-category {
+    margin-bottom: 30px;
+}
+
+#skills .skill-category h3 {
+    border-left: 5px solid var(--accent-color);
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.skill-category ul {
+    list-style: none;
+}
+
+.skill-category li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-category .stars {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+}
+
+#projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.2);
+}
+
+.card h3 {
+    color: var(--accent-color);
+}
+
+.card p {
+    margin-bottom: 15px;
+    flex-grow: 1;
+    color: var(--text-color);
+}
+
+.card .zenn-link {
+    display: inline-block;
+    margin-top: auto;
+    padding: 8px 15px;
+    background-color: #3EA8FF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.card .zenn-link:hover {
+    background-color: #0078D4;
+}
+
+
+#research {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    padding: 40px;
+    margin: 40px auto;
+}
+
+#research strong {
+    color: var(--accent-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.social-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
+
+.social-links i {
+    margin-right: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    header {
+        padding: 0 10px;
+    }
+    nav a {
+        margin: 0 10px;
+        font-size: 0.9rem;
+    }
+    section {
+        padding: 40px 15px;
+    }
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: var(--primary-color);
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1800px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.close-button {
+    color: var(--text-color);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: var(--accent-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modal-project-title {
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+#modal-project-date,
+#modal-project-description,
+#modal-project-detail,
+#modal-project-role,
+#modal-project-tech {
+    margin-bottom: 10px;
+    color: var(--text-color);
+    white-space: pre-wrap;
+}
+
+.skills-definition {
+    background-color: #f5f5f5; /* 薄いグレーの背景 */
+    border-left: 4px solid #ccc; /* 注釈らしさを出す左側のアクセント線 */
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    color: #666; /* 文字色を少し薄くして視覚的な優先度を下げる */
+}
+
+.skills-definition p {
+    font-size: 0.9rem; /* 標準より少し小さめ */
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+
+.skills-definition ul {
+    list-style: none; /* デフォルトのポッチを消す */
+    padding: 0;
+    margin: 0;
+}
+
+.skills-definition li {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+.skills-definition li strong {
+    color: #333; /* 星の部分だけ少し濃くして視認性を確保 */
+    margin-right: 8px;
+    font-family: monospace; /* 星の幅を一定にするため */
+}
+
+/* モーダル下部のボタンエリア */
+.modal-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+/* Notion風ボタンのデザイン */
+.notion-button {
+    display: inline-block;
+    background-color: #000; /* Notionらしい黒 */
+    color: #fff !important;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.notion-button:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* アイコン（絵文字）を添えるとよりNotionっぽくなります */
+.notion-button::before {
+    content: "📝";
+    margin-right: 8px;
+}
+
+/* Zenn風ボタンのデザイン */
+.zenn-button {
+    display: inline-block;
+    background-color: #3ea8ff; /* Zennのブルー */
+    color: #fff !important;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(62, 168, 255, 0.2);
+}
+
+.zenn-button:hover {
+    background-color: #2b95f0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(62, 168, 255, 0.3);
+}
+
+/* Zennボタン用のアイコン */
+.zenn-button::before {
+    content: "📘"; 
+    margin-right: 8px;
+}
