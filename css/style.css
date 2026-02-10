@@ -234,7 +234,7 @@ footer {
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
-    display: flex; /* Use flexbox for centering */
+    display: none;
     justify-content: center;
     align-items: center;
 }
